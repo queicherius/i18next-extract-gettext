@@ -1,6 +1,6 @@
 # i18next-extract-gettext
 
-> A CLI tool for extracting a gettext POT file from multiple JS source files using [i18next](http://i18next.com/)
+> A CLI tool for extracting a gettext POT file from multiple JS source files using [i18next](http://i18next.com/), including [react-i18next](https://github.com/i18next/react-i18next)
 
 ## Install
 
