@@ -1,0 +1,35 @@
+{
+  "name": "i18next-extract-gettext",
+  "version": "0.1.0",
+  "description": "A CLI tool for extracting a gettext POT file from multiple JS source files using i18next",
+  "main": "index.js",
+  "bin": {
+    "i18next-extract-gettext": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/queicherius/i18next-extract-gettext.git"
+  },
+  "keywords": [
+    "i18next",
+    "gettext",
+    "cli",
+    "extract"
+  ],
+  "author": "queicherius@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/queicherius/i18next-extract-gettext/issues"
+  },
+  "homepage": "https://github.com/queicherius/i18next-extract-gettext#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "glob": "^7.0.3",
+    "i18next-conv-inline": "^3.0.0",
+    "i18next-scanner": "^1.4.1",
+    "minimist": "^1.2.0"
+  }
+}
