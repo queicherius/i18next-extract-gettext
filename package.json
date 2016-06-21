@@ -1,6 +1,6 @@
 {
   "name": "i18next-extract-gettext",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A CLI tool for extracting a gettext POT file from multiple JS source files using i18next",
   "main": "index.js",
   "bin": {
