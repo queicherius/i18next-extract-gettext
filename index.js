@@ -2,7 +2,7 @@
 var fs = require('fs')
 var args = require('minimist')(process.argv.slice(2))
 var Parser = require('i18next-scanner').Parser
-var converter = require('i18next-conv-inline')
+var converter = require('i18next-conv')
 var glob = require('glob')
 var debug = require('debug')('i18next-extract-gettext')
 
@@ -55,12 +55,7 @@ glob(fileGlob, function (err, files) {
   var json = parser.get().en.translation
 
   debug('Converting ' + Object.keys(json).length + ' translation keys into gettext')
-  converter.i18nextToGettext('en', json, {quiet: true}, function (err, data) {
-    if (err) {
-      console.log(err)
-      process.exit(1)
-    }
-
+  converter.i18nextToPot('en', JSON.stringify(json), {quiet: true}).then(function (data) {
     debug('Writing into output file')
     fs.writeFileSync(outputFile, data, 'utf-8')
   })
