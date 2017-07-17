@@ -15,10 +15,10 @@ var parserOptions = {
     list: ['i18next.t', 'i18n.t', 't']
   },
   // Make sure common separators don't break the string
-  keySeparator: '°°°°°°.°°°°°°',
-  nsSeparator: '°°°°°°:°°°°°°',
-  pluralSeparator: '°°°°°°_°°°°°°',
-  contextSeparator: '°°°°°°_°°°°°°',
+  keySeparator: args.keySeparator || '°°°°°°.°°°°°°',
+  nsSeparator: args.nsSeparator || '°°°°°°:°°°°°°',
+  pluralSeparator: args.pluralSeparator || '°°°°°°_°°°°°°',
+  contextSeparator: args.contextSeparator || '°°°°°°_°°°°°°',
   // Interpolate correctly
   interpolation: {
     prefix: '{{',
